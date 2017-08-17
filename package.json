@@ -25,7 +25,7 @@
     "PDFRStreamForFile.js",
     "PDFStreamForResponse.js",
     "PDFWStreamForFile.js",
-    "PDFWStreamForBuffer.js"
+    "PDFRStreamForBuffer.js"
   ],
   "dependencies": {
     "node-pre-gyp": "^0.6.13"
