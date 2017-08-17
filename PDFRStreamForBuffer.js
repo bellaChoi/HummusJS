@@ -7,6 +7,12 @@ function PDFRStreamForBuffer (buffer) {
 PDFRStreamForBuffer.prototype.read = function (inAmount) {
   var arr = []
 
+  if (inAmount > this.fileSize) {
+    inAmount = this.fileSize
+  }
+
+  if (!inAmount) return []
+
   for (var i = 0; i < inAmount; i++) {
     arr.push(this.innerBuffer[this.rposition + i])
   }
